@@ -51,3 +51,27 @@ function myFunction() {
 }
 console.log(typeof myFunction); //function
 // myFunction()
+
+
+// %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+// Stack (Primitive), Heap (Non-Primitive)
+
+let myName = "Taher Babuji" 
+
+let anotherName = myName
+anotherName = "Babuji Taher"
+
+console.log(anotherName)
+console.log(myName)
+
+let userOne = {
+  email: "user@gmail.com",
+  upi: "user@ybl"
+}
+
+let userTwo = userOne
+userTwo.email = "taher@gmail.com"
+
+console.log(userOne.email)
+console.log(userTwo.email)
