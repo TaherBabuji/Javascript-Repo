@@ -62,3 +62,12 @@ num1 = num2 = num3 = 2 + 2;
 let gameCounter = 100
 ++gameCounter
 console.log(gameCounter)
+
+x = 3
+y = 3
+
+a = x++
+b = ++y
+
+console.log(a)
+console.log(b)

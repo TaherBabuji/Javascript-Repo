@@ -17,5 +17,5 @@
 // console.log(undefined >= 0);
 
 
-console.log("2" === 2) //This is strict chech where datatype of values will also be checked
-console.log("2" == 2) //This is normal chech where datatype of values will not be checked
+console.log("2" === 2) //This is strict check where datatype of values will also be checked
+console.log("2" == 2) //This is normal check where datatype of values will not be checked

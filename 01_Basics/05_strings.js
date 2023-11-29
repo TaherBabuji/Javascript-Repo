@@ -3,7 +3,7 @@ const repoCount = 4
 
 // console.log(name + repoCount + " Value")
 
-console.log(`Hello my name is ${name} and my repo count is ${repoCount}`) //This method is known as string interpulation
+console.log(`Hello my name is ${name} and my repo count is ${repoCount}`) //This method is known as string interpolation
 const gameName = new String("Taherbabuji")
 
 console.log(gameName[5])
