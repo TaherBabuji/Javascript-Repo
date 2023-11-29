@@ -10,7 +10,7 @@ const dc_Heroes = ["Superman", "Batman", "Flash"];
 const all_Heroes = marvel_Heroes.concat(dc_Heroes);
 // console.log(all_Heroes)
 
-const all_New_Heroes = [...marvel_Heroes, ...dc_Heroes];
+const all_New_Heroes = [...marvel_Heroes, ...dc_Heroes];//This (...) is known as Spread Operator.
 // console.log(all_New_Heroes)
 
 const another_array = [2, 5, 1, [9, 6], 3, [2, 1, 4, [9, 3, 1]]];
