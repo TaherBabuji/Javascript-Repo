@@ -10,22 +10,22 @@ tinderUser.isLoggedIn = false;
 // console.log(tinderUser);
 
 const regularUser = {
-    email: "user@gmail.com",
-    fullname: {
-        userfullname: {
-            firstname: "Taher",
-            lastname: "Babuji"
-        }
-    }
-}
+  email: "user@gmail.com",
+  fullname: {
+    userfullname: {
+      firstname: "Taher",
+      lastname: "Babuji",
+    },
+  },
+};
 
 // console.log(regularUser.fullname.userfullname.firstname)
 
-const obj1 = {1: "a", 2: "b"}
-const obj2 = {3: "c", 4: "d"}
+const obj1 = { 1: "a", 2: "b" };
+const obj2 = { 3: "c", 4: "d" };
 
 //const obj3 = Object.assign(obj1, obj2) // When we will perform assign operation without curly braces at start. Then the values of obj2 will be assigned to obj1
-// And (obj1 === obj3) will provide true as output because . 
+// And (obj1 === obj3) will provide true as output because .
 
 /* In this snippet, "Object.assign(obj1, obj2)" is used to merge the properties of "obj2" into "obj1".
  However, it's important to note that "Object.assign" modifies the first object ("obj1" in this case) 
@@ -45,31 +45,51 @@ in memory. */
 
 // console.log(obj1 === obj3)
 
-const obj3 = {...obj1, ...obj2}
+const obj3 = { ...obj1, ...obj2 };
 // console.log(obj3)
 
 const users = [
-    {
-        id: 1,
-        email: "taher@gmail.com",
-        name: "Taher Babuji"
-    },
-    {
-        id: 1,
-        email: "taher@gmail.comm",
-        name: "Taher Babuji"
-    },
-    {
-        id: 1,
-        email: "taher@gmail.com",
-        name: "Taher Babuji"
-    },
-]
+  {
+    id: 1,
+    email: "taher@gmail.com",
+    name: "Taher Babuji",
+  },
+  {
+    id: 1,
+    email: "taher@gmail.comm",
+    name: "Taher Babuji",
+  },
+  {
+    id: 1,
+    email: "taher@gmail.com",
+    name: "Taher Babuji",
+  },
+];
 
 // console.log(users[1].email)
 
-console.log(Object.keys(tinderUser))
-console.log(Object.values(tinderUser))
-console.log(Object.entries(tinderUser))
+// console.log(Object.keys(tinderUser))
+// console.log(Object.values(tinderUser))
+// console.log(Object.entries(tinderUser))
 
-console.log(tinderUser.hasOwnProperty("isLoggedIn"))
+// console.log(tinderUser.hasOwnProperty("isLoggedIn"))
+
+
+// OBJECT DESTRUCTURING
+const course = {
+  coursename: "js in hindi",
+  courseprice: 999,
+  courseinstructor: "Hitesh Choudhary",
+};
+
+// console.log(course.courseinstructor);
+
+const { courseinstructor: instructor } = course;
+
+console.log(instructor)
+
+// {
+//     "name": "Taher",
+//     "surname": "Babuji",
+//     "age": 21
+// }
