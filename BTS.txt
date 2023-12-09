@@ -1,0 +1,19 @@
+// IMP:- HOW JS WORKS BEHIND THE SCENE
+
+1. JavaScript Execution Context (Types) :-
+    Global Execution Context
+    Function Execution Context
+    Eval Execution Context
+
+1. JavaScript Execution Context :-
+    It means that whatever file you have created. How that file will be executed(run) 
+    by JavaScript.
+    To run a file JavaScript executes your file in 2 phases :-
+
+1.1 Memory Creation Phase or Creation Phase :-
+    In Memory Creation Phase Memory is allocated to the variables or other things you
+    have declared. Execution does not takes place.
+
+1.2 Execution Phase :- 
+    In Execution Phase all the functions, Operations and Mathematical stuffs are Executed.
+        
