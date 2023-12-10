@@ -42,7 +42,7 @@ let negValue = -value
 // console.log(2 * 2)
 // console.log(2 ** 2)
 // console.log(2 / 2)
-// console.log(2 % 2)
+// console.log(2 % 2.5)
 
 let str1 = "Hello"
 let str2 = " Taher"
@@ -61,7 +61,7 @@ num1 = num2 = num3 = 2 + 2;
 
 let gameCounter = 100
 ++gameCounter
-console.log(gameCounter)
+// console.log(gameCounter)
 
 x = 3
 y = 3
@@ -69,5 +69,5 @@ y = 3
 a = x++
 b = ++y
 
-console.log(a)
-console.log(b)
+// console.log(a)
+// console.log(b)
