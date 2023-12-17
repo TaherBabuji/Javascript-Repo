@@ -7,7 +7,7 @@ const balance = new Number(100);
 
 // console.log(balance.toFixed(2));
 
-const otherNumber = 123.896;
+const otherNumber = 122.896;
 
 // console.log(otherNumber.toPrecision(4));
 
@@ -18,7 +18,7 @@ const hundreds = 1000000;
 
 // console.log(Math);
 // console.log(Math.abs(-4));
-// console.log(Math.round(5.7));
+// console.log(Math.round(5.8));
 // console.log(Math.ceil(5.2));
 // console.log(Math.floor(5.9));
 // console.log(Math.min(3, 8, 9, 4, 2));

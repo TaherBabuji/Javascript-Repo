@@ -16,7 +16,7 @@ const gameName = new String("Taherbabuji")
 const newString = gameName.substring(0,5)
 // console.log(newString)
 
-const newString2 = gameName.slice(-10,12)
+const newString2 = gameName.slice(-10,11)
 // console.log(newString2)
 
 const newString3 = "      Taher        "
@@ -31,4 +31,4 @@ const url = "https://taher.com/taher%20babuji"
 
 const newString4 = "Taher-Aliasger-Babuji"
 
-console.log(newString4.split("-"))
+// console.log(newString4.split("-"))
