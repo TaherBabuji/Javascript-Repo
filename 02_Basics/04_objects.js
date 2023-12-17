@@ -24,7 +24,7 @@ const regularUser = {
 const obj1 = { 1: "a", 2: "b" };
 const obj2 = { 3: "c", 4: "d" };
 
-//const obj3 = Object.assign(obj1, obj2) // When we will perform assign operation without curly braces at start. Then the values of obj2 will be assigned to obj1
+// const obj3 = Object.assign(obj1, obj2) // When we will perform assign operation without curly braces at start. Then the values of obj2 will be assigned to obj1
 // And (obj1 === obj3) will provide true as output because .
 
 /* In this snippet, "Object.assign(obj1, obj2)" is used to merge the properties of "obj2" into "obj1".
@@ -45,7 +45,7 @@ in memory. */
 
 // console.log(obj1 === obj3)
 
-const obj3 = { ...obj1, ...obj2 };
+// const obj3 = { ...obj1, ...obj2 };
 // console.log(obj3)
 
 const users = [
@@ -66,14 +66,13 @@ const users = [
   },
 ];
 
-// console.log(users[1].email)
+// console.log(users[1].email);
 
 // console.log(Object.keys(tinderUser))
 // console.log(Object.values(tinderUser))
 // console.log(Object.entries(tinderUser))
 
-// console.log(tinderUser.hasOwnProperty("isLoggedIn"))
-
+// console.log(tinderUser.hasOwnProperty("isLoggedIn"));
 
 // OBJECT DESTRUCTURING
 const course = {

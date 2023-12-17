@@ -24,9 +24,9 @@ const jsUser = {
 
 jsUser.email = "babuji@google.com"
 
-//Object.freeze(jsUser); //freeze is used to lock any ocject which mean after using it no one will be able to change the values inside the objects
-//jsUser.email = "taherBabuji@google.com"//This will not give any error but it will not change the value because we used freeze.
-//console.log(jsUser)
+// Object.freeze(jsUser); //freeze is used to lock any object which mean after using it no one will be able to change the values inside the objects
+// jsUser.email = "taherBabuji@google.com"//This will not give any error but it will not change the value because we used freeze.
+// console.log(jsUser)
 
 jsUser.greeting = function(){
     console.log("Hello JS user")
@@ -36,5 +36,5 @@ jsUser.greetingTwo = function(){
     console.log(`Hello JS user, ${this.name}`)
 }
 
-console.log(jsUser.greeting())
-console.log(jsUser.greetingTwo())
+// console.log(jsUser.greeting())
+// console.log(jsUser.greetingTwo())

@@ -30,7 +30,7 @@ function loginUserMessage(username = "sam") {
   return `${username} just logged in`;
 }
 
-//console.log(loginUserMessage())//If we provide empty arguement to the function then it will give undefined.
+// console.log(loginUserMessage())//If we provide empty arguement to the function then it will give undefined.
 // console.log(loginUserMessage("Taher"));
 
 function calculateCartPrice(val1, val2, ...num1) {
@@ -55,10 +55,10 @@ function handleObject(anyobject) {
 
 // handleObject(user);
 
-handleObject({
-  username: "Sam",
-  price: 499,
-});
+// handleObject({
+//   username: "Sam",
+//   price: 499,
+// });
 
 const myNewArray = [200, 400, 100, 600]
 
@@ -67,4 +67,4 @@ function handleArray(anyArray){
 }
 
 // handleArray(myNewArray)
-handleArray([200, 400, 100, 600])
+// handleArray([200, 400, 100, 600])

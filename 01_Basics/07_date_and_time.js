@@ -10,16 +10,16 @@ const myDate = new Date();
 // console.log(myDate.toLocaleTimeString());
 // console.log(myDate.toLocaleString());
 
-let myCreatedDate = new Date(2023, 5, 23, 22, 35, 55 )
-let myCreatedDate2 = new Date("2023-09-14")
+let myCreatedDate = new Date(2023, 5, 23, 22, 35, 55);
+let myCreatedDate2 = new Date("2023-09-14");
 let myCreatedDate3 = new Date("01-26-2023");
-// console.log(myCreatedDate.toLocaleString())
+// console.log(myCreatedDate.toLocaleString());
 
 let myTimeStamp = Date.now();
 // console.log(myTimeStamp)
 // console.log(myCreatedDate.getTime())
 
-// console.log(Math.floor(Date.now()/1000)) this is used to get seconds without any decimals
+//console.log(Math.floor(Date.now()/1000)) //this is used to get seconds without any decimals
 
 let newDate = new Date();
 // console.log(newDate);
@@ -32,7 +32,8 @@ let newDate = new Date();
 const weekday = newDate.toLocaleString("default", {
   weekday: "long",
   hour: "numeric",
-  year: "numeric"
+  year: "numeric",
+  day: "numeric"
 });
 
-console.log(weekday);
+// console.log(weekday);
