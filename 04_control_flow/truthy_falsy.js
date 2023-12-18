@@ -1,9 +1,9 @@
 const userEmail = [];
 
 if (userEmail) {
-  console.log("Got user email.");
+  // console.log("Got user email.");
 } else {
-  console.log("Don't have user email.");
+  // console.log("Don't have user email.");
 }
 
 // Falsy Values
@@ -21,7 +21,7 @@ if (userEmail) {
 const emptyObj = {};
 
 if (Object.keys(emptyObj).length === 0) {
-  console.log("Object is empty.");
+  // console.log("Object is empty.");
 }
 
 // Nullish coalescing Operator (??)
@@ -30,9 +30,9 @@ let val1;
 // val1 = 5 ?? 10;
 // val1 = null ?? 10;
 // val1 = undefined ?? 15;
-val1 = null ?? 10 ?? 20;
+// val1 = null ?? 10 ?? 20;
 
-console.log(val1);
+// console.log(val1);
 
 // Terniary Operator
 
@@ -40,4 +40,6 @@ console.log(val1);
 
 const iceTeaPrice = 100;
 
-iceTeaPrice <= 80 ? console.log("Price is less then 80") : console.log("Price is more then 80");
+// iceTeaPrice <= 80
+//   ? console.log("Price is less then 80")
+//   : console.log("Price is more then 80");

@@ -10,6 +10,6 @@
 //If we don't put a semicolon at the end of a "iife" then it will throw an error and the code written after that iife will not run.
 
 ((name) => {
-  //This is a simple iife
+  //This is a unnamed or simple iife
   console.log(`DB CONNECTED TWO ${name}`);
 })("Taher");
