@@ -13,7 +13,7 @@ let myArray = ["Flash", "Batman", "Superman", "Aquaman"];
 let i = 0;
 
 while (i < myArray.length) {
-  //   console.log(myArray[i]);
+  // console.log(myArray[i]);
   i++;
 }
 
@@ -21,5 +21,5 @@ let score = 11;
 
 do {
   console.log(`The score is ${score}`);
-  score++
+  score++;
 } while (score <= 10);

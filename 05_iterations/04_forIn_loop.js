@@ -1,3 +1,4 @@
+//for in loop is best for iterating over objects
 // Iteration of object
 
 const myObject = {
@@ -8,13 +9,13 @@ const myObject = {
 };
 
 for (const key in myObject) {
-  //   console.log(`${key} Extension is for ${myObject[key]}`);
+  // console.log(`${key} Extension is for ${myObject[key]}`);
 }
 
 const programming = ["js", "rb", "py", "java", "cpp"];
 
 for (const key in programming) {
-  //   console.log(programming[key]);
+  // console.log(programming[key]);
 }
 
 // const map = new Map();
@@ -23,6 +24,6 @@ for (const key in programming) {
 // map.set("USA", "United States Of America");
 // map.set("FR", "France");
 
-// for (const [key, value] in map) {
-//   console.log(key, value);
+// for (const [key, value] in map) // 'for...in' will not support iterating over a map object
+//   console.log(key, value);      // to iterate over a map object we have to use 'for...of' loop
 // }

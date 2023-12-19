@@ -6,13 +6,14 @@ for (let i = 0; i <= 10; i++) {
   if (element == 5) {
     // console.log("5 is the best number");
   }
-  //   console.log(element);
+  // console.log(element);
 }
 
-// console.log(element)
+// console.log(element)//element is declared inside of for loop so here element is out of scope and we can't use it.
 
 for (let i = 1; i <= 10; i++) {
-  //   console.log(`Outer Loop Value ${i}`);
+  // console.log(`Outer Loop Value ${i}`);
+  // console.log(`\nTable of ${i}`);
 
   for (let j = 1; j <= 10; j++) {
     // console.log(`Inner Loop Value: ${j}, Outer Loop Value: ${i}`);
@@ -25,7 +26,7 @@ const myArray = ["flash", "batman", "superman"];
 
 for (let index = 0; index < myArray.length; index++) {
   let element = myArray[index];
-  //   console.log(element);
+  // console.log(element);
 }
 
 // for (let i = 0; i < 10; i++) {

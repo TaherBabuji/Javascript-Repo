@@ -1,4 +1,5 @@
 // forEach
+// forEach method gives us a callback
 
 const coding = ["js", "ruby", "java", "python", "cpp"];
 
@@ -10,9 +11,9 @@ const coding = ["js", "ruby", "java", "python", "cpp"];
 //   console.log(item);
 // });
 
-// function printMe(item) {
-//   console.log(item);
-// }
+function printMe(item) {
+  console.log(item);
+}
 
 // coding.forEach(printMe);
 
@@ -39,6 +40,16 @@ const myCoding = [
   },
 ];
 
-myCoding.forEach((item) => {
-  console.log(item.languageName);
-});
+// myCoding.forEach((item) => {
+//   console.log(item.languageName);
+// });
+
+
+const values = coding.forEach((item) => { // 'for...each' method will never return a value
+    console.log(item)
+    return
+})
+
+console.log(values)
+ 
+//So if we have to perform any operations on the values of the array or have to check values conditionally then we can use filter.
