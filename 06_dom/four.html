@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Learning</title>
+  </head>
+  <body style="background-color: #212121; color: #fff">
+    <ul class="language">
+      <li>Javascript</li>
+    </ul>
+  </body>
+  <script>
+    function addList(langName) {
+      const newElement = document.createElement("li");
+      newElement.innerHTML = `${langName}`;
+      document.querySelector(".language").append(newElement);
+    }
+
+    addList("Python");
+    addList("Typescript");
+
+    function addOptiList(langName) {
+      const li = document.createElement("li");
+      li.append(document.createTextNode(langName));
+      document.querySelector(".language").append(li);
+    }
+
+    addOptiList("cpp");
+    addOptiList("Java");
+
+    //Edit DOM Elements
+    const secLI = document.querySelector("li:nth-child(2)");
+    // console.log(secLI)
+    // secLI.innerHTML = "mojo"
+    const newLi = document.createElement("li");
+    newLi.textContent = "mojo";
+    secLI.replaceWith(newLi);
+
+    //Edit
+    const firstElement = document.querySelector("li:first-child");
+    firstElement.outerHTML = "<li>Typescript</li>";
+
+    //Remove
+    const lastElement = document.querySelector("li:last-child");
+    lastElement.remove();
+  </script>
+</html>
