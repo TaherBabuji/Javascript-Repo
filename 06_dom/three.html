@@ -12,13 +12,16 @@
     div.className = "main";
     div.id = Math.round(Math.random() * 10 + 1);
     div.setAttribute("title", "generated title");
-    div.style.backgroundColor = "green";
-    div.style.padding = "12em";
+    div.style.backgroundColor = "grey";
+    div.style.padding = "5em 0";
 
-    // div.innerText = "Taher Babuji";
+    // div.innerText = "Taher Babuji"
 
-    const addText = document.createTextNode("Taher Babuji");
-    div.appendChild(addText);
+    const textNode = document.createTextNode("Taher Babuji");
+    div.appendChild(textNode);
+
     document.body.appendChild(div);
+    div.style.textAlign = "center";
+    div.style.fontSize = "2rem";
   </script>
 </html>
