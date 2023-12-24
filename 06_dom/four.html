@@ -11,38 +11,39 @@
     </ul>
   </body>
   <script>
-    function addList(langName) {
-      const newElement = document.createElement("li");
-      newElement.innerHTML = `${langName}`;
-      document.querySelector(".language").append(newElement);
-    }
-
-    addList("Python");
-    addList("Typescript");
-
-    function addOptiList(langName) {
+    function addLanguage(newLang) {
       const li = document.createElement("li");
-      li.append(document.createTextNode(langName));
+      li.innerHTML = `${newLang}`;
       document.querySelector(".language").append(li);
     }
 
-    addOptiList("cpp");
-    addOptiList("Java");
+    addLanguage("Python");
+    addLanguage("Cpp");
 
-    //Edit DOM Elements
-    const secLI = document.querySelector("li:nth-child(2)");
-    // console.log(secLI)
-    // secLI.innerHTML = "mojo"
+    function addOptiLanguage(newLang) {
+      const li = document.createElement("li");
+      li.append(document.createTextNode(newLang));
+
+      document.querySelector(".language").append(li);
+    }
+    addOptiLanguage("Golang");
+
+    //Edit elements inside DOM
+    const secondLang = document.querySelector("li:nth-child(2)");
+    // secondLang.innerHTML = "Mojo";
     const newLi = document.createElement("li");
-    newLi.textContent = "mojo";
-    secLI.replaceWith(newLi);
+    newLi.textContent = "Mojo";
+    secondLang.replaceWith(newLi);
 
     //Edit
-    const firstElement = document.querySelector("li:first-child");
-    firstElement.outerHTML = "<li>Typescript</li>";
+    const firstLang = document.querySelector("li");
+    firstLang.outerHTML = "<li>Typescript</li>";
+    // const newElement = document.createElement("li");
+    // newElement.textContent = "Typescript";
+    // firstLang.replaceWith(newElement);
 
     //Remove
-    const lastElement = document.querySelector("li:last-child");
-    lastElement.remove();
+    const lastLang = document.querySelector("li:last-child");
+    lastLang.remove();
   </script>
 </html>
