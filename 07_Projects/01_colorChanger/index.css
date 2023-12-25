@@ -1,0 +1,31 @@
+.container {
+  width: 80%;
+  margin: 7em auto 0 auto;
+  text-align: center;
+}
+
+.buttons {
+  gap: 0.5em;
+}
+
+.button {
+  padding: 3em;
+  border: solid black 2px;
+  display: inline-block;
+}
+
+#grey {
+  background-color: grey;
+}
+
+#white {
+  background-color: #fff;
+}
+
+#blue {
+  background-color: blue;
+}
+
+#yellow {
+  background-color: yellow;
+}
