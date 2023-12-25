@@ -1,0 +1,20 @@
+body {
+  background-color: grey;
+}
+
+.container {
+  width: 80%;
+  margin: 7em auto 0 auto;
+  text-align: center;
+}
+
+.inputs{
+    border-radius: 1em;
+}
+
+.button {
+  font-size: 1.5em;
+  border-radius: .5em;
+  color: #fff;
+  background-color: black;
+}
