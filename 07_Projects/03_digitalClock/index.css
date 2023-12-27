@@ -1,0 +1,21 @@
+body {
+  background-color: #212121;
+  color: #fff;
+}
+
+.container {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 40vh auto;
+}
+
+#clock {
+  background-color: orange;
+  padding: 1em 2em;
+  margin-top: 0.5em;
+  border-radius: 0.5em;
+  font-size: 1.5rem;
+}
