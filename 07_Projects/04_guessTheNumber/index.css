@@ -1,0 +1,31 @@
+body {
+  background-color: grey;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.title {
+  font-size: 1.5rem;
+  background-color: black;
+  color: white;
+  text-align: center;
+  margin: 0;
+  width: 100%;
+}
+
+.guessField {
+  border: 0.2em solid rgb(90, 90, 90);
+}
+
+.guessSubmit {
+  color: white;
+  background-color: black;
+  border: 0;
+  border-radius: 0.5em;
+  padding: 0.5em 1.5em;
+  margin-top: 2em;
+}
