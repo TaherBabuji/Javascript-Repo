@@ -30,7 +30,7 @@ function guessValidation(guess) {
     alert("Please give number less than 100");
   } else {
     guessedArr.push(guess);
-    if (numberOfGuesses === 10) {
+    if (numberOfGuesses === 11) {
       resultMessage.innerHTML = `Your guessing chances are completed <br> The Correct number was: ${randomNumber}`;
       gameEnd();
     } else {
