@@ -70,20 +70,46 @@
     // clienX, clientY, screenX, screenY
     // altkey, ctrlkey, shiftkey, keyCode
 
+    // document.getElementById("images").addEventListener(
+    //   "click",
+    //   (e) => {
+    //     console.log("Clicked inside ul");
+    //   },
+    //   false //This is known as event propagation
+    // );
+    // document.getElementById("owl").addEventListener(
+    //   "click",
+    //   (e) => {
+    //     console.log("Owl clicked");
+    //     e.stopPropagation(); //This is known as event propagation
+    //   },
+    //   false //This is known as event propagation
+    // );
+
+    // document.getElementById("google").addEventListener(
+    //   "click",
+    //   (e) => {
+    //     console.log("Google Clicked");
+    //     e.preventDefault();
+    //     e.stopPropagation();
+    //   },
+    //   false
+    // );
+
     document.getElementById("images").addEventListener(
       "click",
       (e) => {
-        console.log("Clicked inside ul");
+        console.log(e.target.tagName);
+        console.log(e.target.parentNode.id);
+
+        if (e.target.tagName === "IMG") {
+          const removeImg = e.target.parentNode;
+          removeImg.remove();
+        }
       },
-      false //This is known as event propagation
+      false
     );
-    document.getElementById("owl").addEventListener(
-      "click",
-      (e) => {
-        console.log("Owl clicked");
-        e.stopPropagation(); //This is known as event propagation
-      },
-      false //This is known as event propagation
-    );
+
+    // removeImg.parentNode.removeChild(removeImg);
   </script>
 </html>
