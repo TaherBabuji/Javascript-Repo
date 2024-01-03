@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body{
+        font-size: 2rem;
+        color: #fff;
+      }
+      .container {
+        width: 80%;
+        margin: 0 auto;
+      }
+      .sticker {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: solid white .5em;
+        width: 35%;
+        margin: 0 auto;
+        padding: 1em;
+      }
+      p{
+        margin:0;
+      }
+      img{
+        margin-bottom: 1em;
+      }
+    </style>
+  </head>
+  <body style="background-color: #212121">
+    <div class="container">
+      <div class="sticker"></div>
+    </div>
+  </body>
+  <script>
+    const sticker = document.querySelector(".sticker");
+    const requestUrl = "https://api.github.com/users/taherbabuji";
+    const xhr = new XMLHttpRequest();
+    xhr.open("GET", requestUrl);
+    xhr.onreadystatechange = function () {
+      if (xhr.readyState === 4) {
+        const data = JSON.parse(this.responseText);
+        console.log(data);
+        sticker.innerHTML = `<img src="${data.avatar_url}" alt="taher babuji avatar"
+        <p>Followers = ${data.following}</p>
+        `;
+      }
+    };
+
+    xhr.send();
+  </script>
+</html>
