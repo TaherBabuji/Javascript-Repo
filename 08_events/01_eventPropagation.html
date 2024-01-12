@@ -99,17 +99,19 @@
     document.getElementById("images").addEventListener(
       "click",
       (e) => {
+        const removeImg = e.target.parentNode;
+
         console.log(e.target.tagName);
         console.log(e.target.parentNode.id);
 
         if (e.target.tagName === "IMG") {
-          const removeImg = e.target.parentNode;
           removeImg.remove();
         }
       },
       false
     );
 
+    // removeImg.remove()
     // removeImg.parentNode.removeChild(removeImg);
   </script>
 </html>
