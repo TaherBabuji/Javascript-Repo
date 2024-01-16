@@ -24,7 +24,7 @@ Array.prototype.heyTaher = function () {
 // heroPowers.taher();
 // myHeroes.taher();
 
-// myHeroes.heyTaher();
+myHeroes.heyTaher();
 // heroPowers.heyTaher();
 
 //INHERITANCE :-
@@ -49,7 +49,7 @@ const TASupport = {
 
 // teacher.__proto__ = user;
 
-console.log(TASupport.__proto__.isAvailable);
+// console.log(TASupport.__proto__.isAvailable);
 
 //MODERN SYNTAX
 Object.setPrototypeOf(teacher, user);
@@ -58,6 +58,6 @@ Object.prototype.trueLength = function () {
   console.log(this.trim().length);
 };
 
-"Taher    ".trueLength();
+// "Taher    ".trueLength();
 
-myName.trueLength();
+// myName.trueLength();

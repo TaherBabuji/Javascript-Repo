@@ -23,10 +23,12 @@ const User = function (username, loginCount, isLoggedIn) {
     console.log(`Welcome: ${this.username}`);
   };
 
-  //   return this;
+  return this;
 };
 
 const userOne = new User("Taher", 5, true);
 const userTwo = new User("Aliasger", 7, false);
-console.log(userOne.greetings());
-console.log(userTwo.constructor);
+// console.log(userOne.greetings());
+console.log(userOne);
+
+// console.log(userTwo.constructor);
