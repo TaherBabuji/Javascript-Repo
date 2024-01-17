@@ -13,3 +13,5 @@ function createUser(username, email, password) {
 
 const user = new createUser("Taher", "taher@gmail.com", "Babuji@5253");
 console.log(user);
+
+//Call is used to pass execution function of one object(or function) to another object(or function).
